@@ -5,16 +5,18 @@
 }
 
 body {
-  font-family: 'Segoe UI', Arial, sans-serif;
+  font-family: 'Segoe UI', system-ui, sans-serif;
   line-height: 1.6;
-  color: #222;
+  background: #000000;
+  color: #ffffff;
 }
 
 header {
-  background: #1a1a2e;
+  background: #000000;
   position: sticky;
   top: 0;
   z-index: 10;
+  border-bottom: 1px solid #333;
 }
 
 nav {
@@ -28,8 +30,10 @@ nav {
 
 .logo {
   color: #fff;
-  font-weight: bold;
-  font-size: 1.3rem;
+  font-weight: 900;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .nav-links {
@@ -39,63 +43,86 @@ nav {
 }
 
 .nav-links a {
-  color: #eee;
+  color: #ccc;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  transition: color 0.2s ease;
 }
 
 .nav-links a:hover {
-  color: #e94560;
+  color: #ffffff;
 }
 
 .hero {
-  background: linear-gradient(135deg, #1a1a2e, #16213e);
-  color: white;
+  background: #000000;
   text-align: center;
-  padding: 6rem 2rem;
+  padding: 7rem 2rem;
+  border-bottom: 1px solid #222;
 }
 
 .hero h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  font-weight: 900;
   margin-bottom: 1rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .hero p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-bottom: 2rem;
-  color: #ccc;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 button {
-  background: #e94560;
-  color: white;
-  border: none;
-  padding: 0.8rem 1.6rem;
+  background: #ffffff;
+  color: #000000;
+  border: 2px solid #ffffff;
+  padding: 0.9rem 2rem;
   font-size: 1rem;
-  border-radius: 6px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 0;
   cursor: pointer;
-  transition: background 0.2s ease;
+  transition: background 0.2s ease, color 0.2s ease;
 }
 
 button:hover {
-  background: #c73650;
+  background: #000000;
+  color: #ffffff;
 }
 
 .section {
   max-width: 800px;
   margin: 0 auto;
   padding: 4rem 2rem;
+  border-bottom: 1px solid #222;
 }
 
 .section h2 {
   margin-bottom: 1rem;
-  color: #1a1a2e;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.section p {
+  color: #999;
 }
 
 footer {
   text-align: center;
   padding: 1.5rem;
-  background: #1a1a2e;
-  color: #aaa;
-  font-size: 0.9rem;
+  background: #000000;
+  color: #666;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
