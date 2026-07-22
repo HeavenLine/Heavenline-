@@ -57,7 +57,7 @@ nav {
 }
 
 .hero {
-  background: #000000;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.pexels.com/photos/15751635/pexels-photo-15751635.jpeg') center/cover no-repeat;
   text-align: center;
   padding: 7rem 2rem;
   border-bottom: 1px solid #222;
@@ -127,6 +127,21 @@ footer {
   letter-spacing: 1px;
 }
 
+.design-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.design-gallery img {
+  width: 280px;
+  max-width: 100%;
+  border: 1px solid #333;
+  border-radius: 4px;
+}
+
 .faq-item {
   margin-bottom: 2rem;
 }
@@ -163,4 +178,12 @@ footer {
 
 .blog-post p {
   color: #999;
+}
+
+.feature-video {
+  width: 100%;
+  max-width: 350px;
+  margin-top: 1.5rem;
+  border: 1px solid #333;
+  border-radius: 4px;
 }
