@@ -140,3 +140,27 @@ footer {
 .faq-item p {
   color: #999;
 }
+
+.blog-post {
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #222;
+}
+
+.blog-post h3 {
+  color: #fff;
+  margin-bottom: 0.3rem;
+  font-size: 1.3rem;
+}
+
+.blog-date {
+  color: #666;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.8rem;
+}
+
+.blog-post p {
+  color: #999;
+}
