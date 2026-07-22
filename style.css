@@ -126,3 +126,17 @@ footer {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+
+.faq-item {
+  margin-bottom: 2rem;
+}
+
+.faq-item h3 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.faq-item p {
+  color: #999;
+}
