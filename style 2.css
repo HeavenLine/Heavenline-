@@ -7,17 +7,16 @@
 body {
   font-family: 'Segoe UI', system-ui, sans-serif;
   line-height: 1.6;
-  background: #0d0d12;
-  color: #e6e6e6;
+  background: #000000;
+  color: #ffffff;
 }
 
 header {
-  background: rgba(13, 13, 18, 0.85);
-  backdrop-filter: blur(8px);
+  background: #000000;
   position: sticky;
   top: 0;
   z-index: 10;
-  border-bottom: 1px solid #222230;
+  border-bottom: 1px solid #333;
 }
 
 nav {
@@ -31,9 +30,10 @@ nav {
 
 .logo {
   color: #fff;
-  font-weight: 700;
-  font-size: 1.3rem;
-  letter-spacing: 0.5px;
+  font-weight: 900;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .nav-links {
@@ -43,74 +43,157 @@ nav {
 }
 
 .nav-links a {
-  color: #b3b3c0;
+  color: #ccc;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
   transition: color 0.2s ease;
 }
 
 .nav-links a:hover {
-  color: #7f5af0;
+  color: #ffffff;
 }
 
 .hero {
-  background: radial-gradient(circle at top, #1a1a2e, #0d0d12 70%);
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.pexels.com/photos/15751635/pexels-photo-15751635.jpeg') center/cover no-repeat;
   text-align: center;
   padding: 7rem 2rem;
+  border-bottom: 1px solid #222;
 }
 
 .hero h1 {
-  font-size: 2.8rem;
+  font-size: 3rem;
+  font-weight: 900;
   margin-bottom: 1rem;
-  background: linear-gradient(90deg, #7f5af0, #2cb67d);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .hero p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-bottom: 2rem;
-  color: #a0a0ad;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 button {
-  background: #7f5af0;
-  color: white;
-  border: none;
-  padding: 0.8rem 1.8rem;
+  background: #ffffff;
+  color: #000000;
+  border: 2px solid #ffffff;
+  padding: 0.9rem 2rem;
   font-size: 1rem;
-  border-radius: 8px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 0;
   cursor: pointer;
-  transition: background 0.2s ease, transform 0.15s ease;
+  transition: background 0.2s ease, color 0.2s ease;
 }
 
 button:hover {
-  background: #6b46e0;
-  transform: translateY(-2px);
+  background: #000000;
+  color: #ffffff;
 }
 
 .section {
   max-width: 800px;
   margin: 0 auto;
   padding: 4rem 2rem;
-  border-top: 1px solid #1c1c28;
+  border-bottom: 1px solid #222;
 }
 
 .section h2 {
   margin-bottom: 1rem;
   color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .section p {
-  color: #a0a0ad;
+  color: #999;
 }
 
 footer {
   text-align: center;
   padding: 1.5rem;
-  background: #0d0d12;
-  border-top: 1px solid #1c1c28;
-  color: #6b6b76;
-  font-size: 0.9rem;
+  background: #000000;
+  color: #666;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.design-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.design-gallery img {
+  width: 280px;
+  max-width: 100%;
+  border: 1px solid #333;
+  border-radius: 4px;
+}
+
+.faq-item {
+  margin-bottom: 2rem;
+}
+
+.faq-item h3 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.faq-item p {
+  color: #999;
+}
+
+.blog-post {
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #222;
+}
+
+.blog-post h3 {
+  color: #fff;
+  margin-bottom: 0.3rem;
+  font-size: 1.3rem;
+}
+
+.blog-date {
+  color: #666;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.8rem;
+}
+
+.blog-post p {
+  color: #999;
+}
+
+.feature-video {
+  width: 100%;
+  max-width: 350px;
+  margin-top: 1.5rem;
+  border: 1px solid #333;
+  border-radius: 4px;
+}
+
+.socials a {
+  color: #ccc;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.socials a:hover {
+  color: #fff;
 }
