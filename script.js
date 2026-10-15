@@ -28,16 +28,24 @@ if (verseEl) {
 // Dark / Light mode toggle
 const modeToggle = document.getElementById('modeToggle');
 if (modeToggle) {
-  const savedMode = localStorage.getItem('heavenlineMode');
-  if (savedMode === 'light') {
-    document.body.classList.add('light-mode');
-    modeToggle.textContent = 'Dark Mode';
+  try {
+    const savedMode = localStorage.getItem('heavenlineMode');
+    if (savedMode === 'light') {
+      document.body.classList.add('light-mode');
+      modeToggle.textContent = 'Dark Mode';
+    }
+  } catch (e) {
+    // localStorage unavailable (private browsing, etc.) - just skip remembering the choice
   }
 
   modeToggle.addEventListener('click', () => {
     document.body.classList.toggle('light-mode');
     const isLight = document.body.classList.contains('light-mode');
     modeToggle.textContent = isLight ? 'Dark Mode' : 'Light Mode';
-    localStorage.setItem('heavenlineMode', isLight ? 'light' : 'dark');
+    try {
+      localStorage.setItem('heavenlineMode', isLight ? 'light' : 'dark');
+    } catch (e) {
+      // ignore if storage isn't available
+    }
   });
 }
