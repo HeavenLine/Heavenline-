@@ -34,6 +34,20 @@ nav {
   font-size: 1.4rem;
   letter-spacing: 1px;
   text-transform: uppercase;
+  opacity: 0;
+  transform: translateX(-40px);
+  animation: logoSlideIn 0.8s ease forwards;
+}
+
+@keyframes logoSlideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .nav-links {
