@@ -29,41 +29,57 @@ nav {
 }
 
 .logo {
-  color: #fff;
   font-weight: 900;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   letter-spacing: 1px;
   text-transform: uppercase;
+  background: linear-gradient(90deg, #fff, #888, #fff, #888, #fff);
+  background-size: 300% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   opacity: 0;
   transform: translateX(-60px) scale(0.7);
-  animation: logoSlideIn 1.4s cubic-bezier(0.25, 1, 0.5, 1) forwards,
-             logoGlowPulse 2.5s ease-in-out 1.4s infinite;
+  animation: logoSlideIn 1.2s cubic-bezier(0.25, 1, 0.5, 1) forwards,
+             logoFlicker 1.8s steps(1) 1.2s 2,
+             logoShine 4s linear 3s infinite,
+             logoGlowPulse 2.5s ease-in-out 3s infinite;
 }
 
 @keyframes logoSlideIn {
   0% {
     opacity: 0;
     transform: translateX(-60px) scale(0.7);
-    text-shadow: 0 0 0px rgba(255,255,255,0);
   }
   60% {
     opacity: 1;
-    transform: translateX(5px) scale(1.05);
-    text-shadow: 0 0 16px rgba(255,255,255,0.8);
+    transform: translateX(5px) scale(1.08);
   }
   100% {
     opacity: 1;
     transform: translateX(0) scale(1);
-    text-shadow: 0 0 0px rgba(255,255,255,0);
   }
+}
+
+@keyframes logoFlicker {
+  0%, 100% { opacity: 1; }
+  10% { opacity: 0.4; }
+  20% { opacity: 1; }
+  30% { opacity: 0.3; }
+  40% { opacity: 1; }
+}
+
+@keyframes logoShine {
+  0% { background-position: 0% center; }
+  100% { background-position: 300% center; }
 }
 
 @keyframes logoGlowPulse {
   0%, 100% {
-    text-shadow: 0 0 2px rgba(255,255,255,0.1);
+    filter: drop-shadow(0 0 2px rgba(255,255,255,0.1));
   }
   50% {
-    text-shadow: 0 0 14px rgba(255,255,255,0.9);
+    filter: drop-shadow(0 0 12px rgba(255,255,255,0.8));
   }
 }
 
