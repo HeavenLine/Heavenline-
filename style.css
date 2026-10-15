@@ -36,7 +36,8 @@ nav {
   text-transform: uppercase;
   opacity: 0;
   transform: translateX(-60px) scale(0.7);
-  animation: logoSlideIn 1.4s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+  animation: logoSlideIn 1.4s cubic-bezier(0.25, 1, 0.5, 1) forwards,
+             logoGlowPulse 2.5s ease-in-out 1.4s infinite;
 }
 
 @keyframes logoSlideIn {
@@ -54,6 +55,15 @@ nav {
     opacity: 1;
     transform: translateX(0) scale(1);
     text-shadow: 0 0 0px rgba(255,255,255,0);
+  }
+}
+
+@keyframes logoGlowPulse {
+  0%, 100% {
+    text-shadow: 0 0 2px rgba(255,255,255,0.1);
+  }
+  50% {
+    text-shadow: 0 0 14px rgba(255,255,255,0.9);
   }
 }
 
