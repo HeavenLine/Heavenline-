@@ -36,7 +36,7 @@ nav {
   text-transform: uppercase;
   opacity: 0;
   transform: translateX(-40px);
-  animation: logoSlideIn 0.8s ease forwards;
+  animation: logoSlideIn 2s ease forwards;
 }
 
 @keyframes logoSlideIn {
