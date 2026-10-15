@@ -35,18 +35,25 @@ nav {
   letter-spacing: 1px;
   text-transform: uppercase;
   opacity: 0;
-  transform: translateX(-40px);
-  animation: logoSlideIn 2s ease forwards;
+  transform: translateX(-60px) scale(0.7);
+  animation: logoSlideIn 1.4s cubic-bezier(0.25, 1, 0.5, 1) forwards;
 }
 
 @keyframes logoSlideIn {
-  from {
+  0% {
     opacity: 0;
-    transform: translateX(-40px);
+    transform: translateX(-60px) scale(0.7);
+    text-shadow: 0 0 0px rgba(255,255,255,0);
   }
-  to {
+  60% {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateX(5px) scale(1.05);
+    text-shadow: 0 0 16px rgba(255,255,255,0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+    text-shadow: 0 0 0px rgba(255,255,255,0);
   }
 }
 
