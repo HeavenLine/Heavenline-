@@ -4,7 +4,7 @@ if ('scrollRestoration' in history) {
 window.scrollTo(0, 0);
 
 document.getElementById('clickMe').addEventListener('click', () => {
-  window.location.href = 'https://heavenlinegodisgood.my.canva.site/';
+  window.location.href = 'https://heavenlinepage1.my.canva.site/';
 });
 
 // Verse of the Day - automatically changes based on today's date
